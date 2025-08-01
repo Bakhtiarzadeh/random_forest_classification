@@ -1,0 +1,73 @@
+Dataset prepared successfully!
+Features: 4
+Classes: 4 (Multi-class)
+Target names: ['0.0', '1.0', '2.0', '3.0']
+Training set: (1600, 4)
+Validation set: (400, 4)
+Test set: (400, 4)
+
+============================================================
+TRAINING WITH RANDOM SEARCH
+============================================================
+Starting random search with 5-fold CV and 30 iterations...
+Fitting 5 folds for each of 30 candidates, totalling 150 fits
+Best parameters: {'n_estimators': 50, 'min_samples_split': 5, 'min_samples_leaf': 3, 'max_samples': 0.6, 'max_features': None, 'max_depth': 25, 'criterion': 'entropy', 'class_weight': 'balanced', 'bootstrap': True}
+Best CV score: 0.8931
+Out-of-bag score: 0.9006
+
+============================================================
+MODEL EVALUATION RESULTS
+============================================================
+
+Train Set:
+  Accuracy:  0.9688
+  Precision: 0.9689
+  Recall:    0.9688
+  F1-Score:  0.9688
+  ROC-AUC:   0.9989
+
+Validation Set:
+  Accuracy:  0.9400
+  Precision: 0.9399
+  Recall:    0.9400
+  F1-Score:  0.9399
+  ROC-AUC:   0.9946
+
+Test Set:
+  Accuracy:  0.9400
+  Precision: 0.9399
+  Recall:    0.9400
+  F1-Score:  0.9399
+  ROC-AUC:   0.9946
+
+Detailed Classification Report (Test Set):
+              precision    recall  f1-score   support
+
+         0.0       0.97      0.98      0.98       100
+         1.0       0.91      0.93      0.92       100
+         2.0       0.92      0.89      0.90       100
+         3.0       0.96      0.96      0.96       100
+
+    accuracy                           0.94       400
+   macro avg       0.94      0.94      0.94       400
+weighted avg       0.94      0.94      0.94       400
+
+
+============================================================
+ADVANCED MODEL ANALYSIS
+============================================================
+
+5-Fold Cross-Validation Scores: [0.896875 0.9      0.88125  0.88125  0.90625 ]
+Mean CV Score: 0.8931 (+/- 0.0203)
+
+Features above average importance: 1 out of 4
+Out-of-bag Score: 0.9006
+Out-of-bag Error: 0.0994
+
+Model Complexity Analysis:
+  Number of estimators: 50
+  Max depth: 25
+  Min samples split: 5
+  Min samples leaf: 3
+  Max features: None
+  Approximate model size: 0.00 MB
