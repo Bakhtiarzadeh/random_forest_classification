@@ -25,7 +25,6 @@
 │   └── predicted value vs actual value.png
 │   └── MAE_MSE_R2.png
 │   └── feature importance.png
-
 ├── README.md                # This file
 </pre>
 
